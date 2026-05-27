@@ -4721,3 +4721,34 @@ a:hover, a:focus, a.active {
     transition: transform 0.3s ease;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+/* Rounded corners for all service detail images */
+.service-detail .img-holder img {
+    border-radius: 8px; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    transition: all 0.3s ease; /* Optional: adds smooth effect */
+}
+
+/* Add hover effect */
+.service-detail .img-holder img:hover {
+    border-radius: 4px; /* Changes on hover */
+}
+/* Only affects the solar content page */
+.service-detail.solar-content .fst,
+.service-detail.solar-content .scd {
+    float: none;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.service-detail.solar-content h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.service-detail.solar-content h2:first-of-type {
+    margin-top: 0;
+}
